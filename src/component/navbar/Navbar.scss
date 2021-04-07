@@ -1,0 +1,34 @@
+.navbar{
+  position: relative;
+  padding: 10px 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.644);
+  font-size: 1.2rem;
+  transition: ease-in-out all .5s;
+  >a{
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    &:hover{
+      background: rgb(119, 138, 119);
+    }
+  }
+  span{
+    position: absolute;
+    top: 12px;
+    right: 155px;
+    color: whitesmoke;
+  }
+}
+@media (max-width: 650px) {
+  .navbar{
+    width: 100vw;
+    padding: 10px 30px;
+    span{
+      right: 35px;
+    }
+  }
+}
